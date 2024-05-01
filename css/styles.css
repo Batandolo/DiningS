@@ -1,0 +1,292 @@
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: 'verdana';
+}
+
+.header{
+	width: 100vw;
+	height: 80vh;
+	max-width: 100%;
+	background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.6)), url("../img/bg1.png");
+	background-repeat: no-repeat;
+	  background-position: center;
+  background-size: cover;
+}
+
+header button{
+  padding: 5px 10px 5px 10px;
+  margin-right: 100px;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+button{
+  padding: 20px;
+  color: red;
+  background-color: black;
+  border-size: 20px;
+  border-style: solid;
+  border-color: red;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+header{
+	width: 100%;
+	font-size: 20px;
+	display: flex;
+	justify-content: space-evenly;
+}
+.logo{
+  margin-left: 20px;
+  color: red;
+  font-size: 50px;
+  transition: all 0.3s ease 0s;
+  font-family: 'Dancing Script', san-serif;
+ }
+.logo1{
+  color: orange;
+}
+.logo:hover{
+  transform: scale(1.5);
+  transition: all 0.3s ease 0s;
+}
+a{
+  text-decoration: none;
+}
+nav ul li{
+  display: inline-block;
+  padding: 30px;
+  list-style: none;
+   transition: all 0.3s ease 0s;
+}
+nav ul li a{
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+nav ul li:hover{
+  border-radius: 20px;
+  transform: scale(1.5);
+  color: orange;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+ .title{
+	top: 200px;
+	left: 40%;
+  font-size: 50px;
+  position: absolute;
+}
+.title h1{
+  color: red;
+  font-family: 'Dancing Script', san-serif;
+}
+
+
+.left{
+  animation-name: slideleft;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-duration: 1s;
+}
+.right{
+  animation-name: slideright;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-duration: 1s;
+}
+
+.large{
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Dancing Script', san-serif;
+}
+
+@keyframes slideleft{
+  from{
+    transform: translateX(100px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideright{
+  from{
+    transform: translateX(-100px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+main{
+  padding: 0;
+  margin: 0;
+}
+.homedes1{
+  padding: 30px;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: maroon;
+  color: orange;
+}
+
+.homedes2{
+  margin-top: 50px;
+  font-weight: bold;
+  padding: 0px;
+  color: orange;
+  font-size: 20px;
+}
+
+.leftside{
+  padding: 200px;
+  background-color: black;
+  text-align: left;
+}
+
+.rightside{
+  color: red;
+  padding: 200px;
+  background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.6)), url("../img/food1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: right;
+}
+
+.center{
+  color: red;
+  padding: 200px;
+  text-align: center;
+  background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.6)), url("../img/bg2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about{
+
+  padding: 100px;
+  background-color: #F88017;
+  color: black;
+  font-size: 30px;
+  font-weight: 1000;
+  text-align: center;
+  margin-bottom: 200px;
+  margin-top: 200px;
+}
+.abouttxt{
+        display: flex;
+        justify-content: space-evenly;
+}
+.about h1{
+        font-size: 100px;
+        font-family: 'Dancing Script', san-serif;
+  text-align: center
+}
+.about p{
+        margin-left: 300px;
+        text-align: left;
+}
+
+  footer{
+        padding: 20px;
+        border: 0px;
+        border-color: white;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        color: red;
+        font-size: 10px;
+}
+hr{
+	border-color: red;
+}
+
+.popular{
+  color: black;
+  background-color: gold;
+  font-size: 15px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.pgrid{
+  margin-bottom: 20px;
+  margin-top: 50px;
+  background-color: black/*#F88017*/;
+  padding: 10px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 50% 49%;
+}
+
+.card{
+
+  font-weight: bold;
+  padding: 30px 50px 30px 50px;
+  background-color: orange;
+  color: orange;
+  border-radius: 10px;
+}
+
+.card h1{
+  font-size: 20px;
+}
+
+.one{
+  background-image: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.6)), url("../img/food5.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.two{
+  background-image: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.6)), url("../img/food6.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.three{
+  background-image: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.6)), url("../img/food7.jpg");
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+}
+.four{
+  background-image: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.6)), url("../img/food8.jpg");
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+}
+.five{
+  background-image: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.6)), url("../img/food3.jpg");
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+}
+
+.six{
+  background-image: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.6)), url("../img/food4.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom ;
+  background-size: cover;
+}
+
+
+@media(max-width){
+	
+	
+}
