@@ -194,3 +194,17 @@ footer{
 hr{
 	border-color: red;
 }
+
+@media (width: 1440px){
+	.profile img{
+		left: 500px;
+	}
+	.crew img{
+		left: 200px;
+	}
+	.title{
+	top: 100px;
+	left: 40%;
+	}
+	
+}
